@@ -8,6 +8,11 @@ https://templatemo.com/tm-593-personal-shape
 
 // JavaScript Document
 
+// Global variables
+
+const API_URL = "https://demek-api.onrender.com";
+// const API_URL = "http://localhost:5000";
+
 // Mobile menu functionality
 const mobileMenuToggle = document.getElementById("mobileMenuToggle");
 const mobileMenu = document.getElementById("mobileMenu");
@@ -143,7 +148,7 @@ document
     submitBtn.disabled = true;
     submitBtn.style.background = "linear-gradient(135deg, #94a3b8, #64748b)";
 
-    const response = await fetch("http://localhost:5000/api/messages", {
+    const response = await fetch(`${API_URL}/api/messages`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
