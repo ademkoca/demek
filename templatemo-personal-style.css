@@ -614,6 +614,10 @@ nav.scrolled {
   margin-right: auto;
 }
 
+#typewriter {
+  color: var(--text-primary);
+}
+
 .cta-button {
   display: inline-block;
   padding: 1.2rem 3rem;
